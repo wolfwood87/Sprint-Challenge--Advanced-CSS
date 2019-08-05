@@ -5,3 +5,17 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.button(@width, @height, @font){
+    @remsize: @font;
+    border: 1px solid @btn-bg-color;
+    color: @border-real;
+    background-color: @btn-bg-color;
+    height: @height;
+    width: @width;
+    font-size: ~"@{remsize}rem";
+    text-align: center;
+    padding-top: 1.5%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
