@@ -132,6 +132,11 @@ table {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 500px) {
+  html {
+    font-weight: bold;
+  }
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -184,13 +189,6 @@ p {
 .navigation .logo h1 {
   font-size: 4rem;
 }
-.navigation .logo .head-image {
-  width: 50%;
-  border: 1px solid black;
-}
-.navigation .logo .head-image img {
-  width: 50%;
-}
 .navigation .logo nav {
   font-size: 1.5rem;
   width: 30%;
@@ -209,6 +207,15 @@ p {
     font-weight: bold;
   }
 }
+.navigation .head-image {
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .navigation .head-image {
+    height: 15rem;
+    width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -218,6 +225,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer {
+    font-weight: bold;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -266,6 +278,10 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     width: 100%;
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 6%;
+    padding-bottom: 1%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -309,7 +325,7 @@ footer {
     height: 7rem;
     font-size: 2rem;
     font-weight: bold;
-    padding-top: 7.5%;
+    padding-top: 6%;
   }
 }
 .home .walk .walk-img {
@@ -318,7 +334,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 120%;
+    width: 100%;
   }
 }
 .home .walk .walk-img img {

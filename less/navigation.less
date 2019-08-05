@@ -11,13 +11,7 @@
         h1{
         font-size: 4rem;
         }
-        .head-image{
-            width: 50%;
-            border: 1px solid black;
-            img{
-                width: 50%;
-            }
-        }
+        
         nav{
             font-size: 1.5rem;
             width: 30%;
@@ -35,6 +29,13 @@
         
 
         .flexin(column, space-evenly, center);
+    }
+    .head-image{
+        border-radius: .5rem;
+        @media @mobile{
+            height: 15rem;
+            width: 100%;
+        }
     }
     
     .flexin(column, space-between, center);
