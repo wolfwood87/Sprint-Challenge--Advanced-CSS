@@ -5,6 +5,9 @@
 
 html {
   font-size: 62.5%;
+  @media @mobile{
+    font-weight: bold;
+  }
 }
 
 html, body {
@@ -32,7 +35,7 @@ p {
 
 .container {
   max-width: 800px;
-  width: 100%;
+  .fullwidth();
   margin: 0 auto;  
 }
 
