@@ -1,18 +1,24 @@
 // Navigation code here
 .navigation{
-    height: 27rem;
-    h1{
+    .logo{
+        height: 8rem;
+        width: 100%;
+        background-color: @nav-bg;
+        border-bottom: 1px solid @nav-border;
+        h1{
         font-size: 4rem;
-    }
-    
-    nav{
-        font-size: 1.5rem;
-        width: 30%;
-        a{
-            text-decoration: none;
-            color: black;
         }
-        .flexin(row, space-evenly, center)      
+        
+        nav{
+            font-size: 1.5rem;
+            width: 30%;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .flexin(row, space-evenly, center)      
+        }
+        .flexin(column, space-evenly, center);
     }
     .flexin(column, space-between, center);
 }
