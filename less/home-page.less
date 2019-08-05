@@ -16,10 +16,11 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .fullwidth();
+
     @media @mobile{
       .blast{
-        width: 100%;
+        .fullwidth();
       }
       .sky{
         display: none;
@@ -75,7 +76,7 @@
         margin-bottom: 26px;
       }
       @media @mobile{
-        width: 100%;
+        .fullwidth();
         margin: 5%;
       }
       .btn {
@@ -100,11 +101,11 @@
       margin-left: 4%;
 
       @media @mobile{
-        width: 100%;
+        .fullwidth();
 
       }
       img {
-        width: 100%;
+        .fullwidth();
         height: auto;
         border-radius: 10px;
       }
