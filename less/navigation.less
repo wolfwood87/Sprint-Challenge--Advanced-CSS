@@ -5,6 +5,9 @@
         width: 100%;
         background-color: @nav-bg;
         border-bottom: 1px solid @nav-border;
+        @media @mobile{
+            height: 10rem;
+        }
         h1{
         font-size: 4rem;
         }
@@ -16,9 +19,15 @@
                 text-decoration: none;
                 color: @nav-font;
             }
+            @media @mobile{
+                width: 90%;
+                font-weight: bold;
+            }
             .flexin(row, space-evenly, center)      
         }
+        
         .flexin(column, space-evenly, center);
     }
+    
     .flexin(column, space-between, center);
 }
